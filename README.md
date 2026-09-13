@@ -1,4 +1,206 @@
-# react-native-share [![react-native-share](https://circleci.com/gh/react-native-share/react-native-share.svg?style=svg)](https://app.circleci.com/pipelines/github/react-native-share/react-native-share) [![npm version](https://badge.fury.io/js/react-native-share.svg)](http://badge.fury.io/js/react-native-share) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+# react-native-share
+
+> Social share, sending simple data to other apps.
+
+---
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Tech Stack](#tech-stack)
+3. [Repository Structure](#repository-structure)
+4. [Key Components](#key-components)
+5. [Setup & Installation](#setup--installation)
+6. [Running the Application](#running-the-application)
+7. [Infrastructure & CI/CD](#infrastructure--cicd)
+8. [Contributing](#contributing)
+
+---
+
+## Overview
+
+**react-native-share** is part of the [Unacademy](https://github.com/unacademy) engineering ecosystem.
+
+Social share, sending simple data to other apps.
+
+**Topics / Tags:** `approvers-1`
+
+---
+
+## Tech Stack
+
+| Attribute | Value |
+|-----------|-------|
+| **Primary Language** | Unknown |
+| **Framework / Platform** | React Native |
+| **Package Manager** | — |
+
+### Dependencies
+
+**Dev Dependencies:**
+- `@babel/core`
+- `@babel/runtime`
+- `@commitlint/cli`
+- `@commitlint/config-conventional`
+- `@react-native-community/eslint-config`
+- `@react-native-community/eslint-plugin`
+- `@semantic-release/commit-analyzer`
+- `@semantic-release/git`
+- `@semantic-release/github`
+- `@semantic-release/npm`
+
+
+---
+
+## Repository Structure
+
+```
+react-native-share/
+├── .circleci
+├── .eslintignore
+├── .eslintrc
+├── .flowconfig
+├── .github/
+│   ├── ISSUE_TEMPLATE
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── stale.yml
+├── .gitignore
+├── .npmignore
+├── CHANGELOG.md
+├── CODEOWNERS
+├── LICENSE
+├── README.md
+├── RNShare.podspec
+├── android/
+│   ├── .npmignore
+│   ├── build.gradle
+│   ├── gradle
+│   ├── gradlew
+│   ├── gradlew.bat
+├── commitlint.config.js
+├── components/
+│   ├── Button.js
+│   ├── Overlay.js
+│   ├── Sheet.js
+├── example/
+│   ├── .eslintrc.js
+│   ├── .gitignore
+│   ├── .prettierrc.js
+│   ├── App.js
+│   ├── android
+├── index.js
+├── ios/
+│   ├── .npmignore
+│   ├── EmailShare.h
+│   ├── EmailShare.m
+│   ├── FacebookStories.h
+│   ├── FacebookStories.m
+... (truncated)
+```
+
+---
+
+## Key Components
+
+Below is an analysis of the key files and modules:
+
+| File / Directory | Purpose |
+|-----------------|---------|
+| `CHANGELOG.md` | Source file |
+| `CODEOWNERS` | Source file |
+| `LICENSE` | Source file |
+| `README.md` | Source file |
+| `RNShare.podspec` | Source file |
+| `android/.npmignore` | Source file |
+| `android/build.gradle` | Source file |
+| `android/gradle/wrapper/gradle-wrapper.jar` | Source file |
+| `android/gradle/wrapper/gradle-wrapper.properties` | Source file |
+
+> **Note:** Only the first 20 non-trivial files are listed. See the repository tree above for the complete structure.
+
+---
+
+## Setup & Installation
+
+### Prerequisites
+
+- Git (`git --version`)
+- Unknown runtime installed
+
+
+
+### Steps
+
+```bash
+git clone git@github.com:unacademy/react-native-share.git
+cd react-native-share
+# Follow language-specific setup
+```
+
+### Available Scripts
+
+```bash
+# start
+npm run start   # react-native start
+
+# start:android
+npm run start:android   # react-native run-android
+
+# start:ios
+npm run start:ios   # react-native run-ios
+
+# lint
+npm run lint   # eslint index.js --max-warnings=0
+
+# lint:staged
+npm run lint:staged   # lint-staged
+
+# validate
+npm run validate   # yarn validate:prettier && yarn validate:lint && yarn validate:flow
+
+# validate:flow
+npm run validate:flow   # yarn flow
+
+# validate:lint
+npm run validate:lint   # eslint *js components/*.js --max-warnings=0
+
+# validate:prettier
+npm run validate:prettier   # prettier --write *.js components/*.js
+
+# ci:publish
+npm run ci:publish   # npx semantic-release
+
+```
+
+
+---
+
+## Running the Application
+
+```bash
+npm run start   # react-native start
+```
+
+---
+
+## Infrastructure & CI/CD
+
+- Test suite present — run tests before submitting PRs
+
+---
+
+## Contributing
+
+1. Create a feature branch: `git checkout -b feat/your-feature`
+2. Commit your changes: `git commit -m "feat: describe your change"`
+3. Push and open a PR targeting `master`
+4. Ensure all CI checks pass before requesting review
+
+---
+
+## Original README (Excerpt)
+
+> # react-native-share [![react-native-share](https://circleci.com/gh/react-native-share/react-native-share.svg?style=svg)](https://app.circleci.com/pipelines/github/react-native-share/react-native-share) [![npm version](https://badge.fury.io/js/react-native-share.svg)](http://badge.fury.io/js/react-native-share) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 React Native Share, a simple tool for share message and file to other apps.
 
@@ -6,50 +208,9 @@ React Native Share, a simple tool for share message and file to other apps.
 
 ---
 
-If you use this library on your commercial/personal projects, you can help us by funding the work on specific issues that you choose by using IssueHunt.io!
-
-This gives you the power to prioritize our work and support the project contributors. Moreover it'll guarantee the project will be updated and maintained in the long run.
-
-[![issuehunt-image](https://issuehunt.io/static/embed/issuehunt-button-v1.svg)](https://issuehunt.io/repos/43406976)
-
-# Getting started
+If you use this library on
 
 ---
 
-If you are using `react-native >= 0.60` you just need to do a simple:
-
-```shell
-yarn add react-native-share
-```
-
-Or if are using npm:
-
-```shell
-npm i react-native-share --save
-```
-
-After that, we need to install the dependencies to use the project on iOS(you can skip this part, if you are using this on Android).
-
-Now run a simple: `npx pod-install` or `cd ios && pod install`. After that, you should be able to use the library on both Platforms, iOS and Android.
-
-Then simply import:
-
-```js
-import Share from 'react-native-share';
-
-Share.open(options)
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    err && console.log(err);
-  });
-```
-
-Which you do something similar to this:
-
-![example-ios](website/static/img/assets-docs/ios-readme-example.gif)
-
-# Documentation
-
-If you are using a older version of `react-native` or `react-native-share`, having any problem or want to know how use `Share.open` and other functions, please refer to our new [docs](https://react-native-share.github.io/react-native-share) and help us improve that. ❤️
+*This README was auto-generated on 2026-09-14 by the Unacademy repo-summarizer tool.*
+*For corrections or additions, edit this file directly or open an issue.*
